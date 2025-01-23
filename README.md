@@ -13,9 +13,9 @@ Support Chart
 
 | Release Name | Status | Notes |
 | --- | --- | --- |
-| Sierra | <span style="color: #7afc4e;">Boots Successfully</span> | "getCPUIDInfo unknown CPU family"<br>Need to update to proper CPU Family ID. |
-| El Capitan | <span style="color: #a80000;">Incomplete</span> | None |
-| Yosemite | <span style="color: #a80000;">Incomplete</span> | None |
+| Sierra | <span style="color: #7afc4e;">Complete</span> | Boots in a VM, untested on baremetal. |
+| El Capitan | <span style="color: #7afc4e;">Complete</span> | Boots in a VM, untested on baremetal. |
+| Yosemite | <span style="color: #ffe985;">Work-In-Progress</span> | Research Phase<br>Currently Kernel Panics. |
 | Mavericks | <span style="color: #a80000;">Incomplete</span> | None |
 | Mountain Lion | <span style="color: #a80000;">Incomplete</span> | None |
 | Lion | <span style="color: #a80000;">Incomplete</span> | None |
@@ -27,7 +27,10 @@ Support Chart
 
 ### OpenCore Quirks
 
+Ensure ``FixupAppleEfiImages`` quirk is enabled to ensure W^R errors on older OS X doesn't have issues.
+
 Ensure the Kernel Quirk `ProvideCurrentCpuInfo` is enabled. OpenCore 0.7.1 or newer is required. You should NOT be using an outdated copy of OpenCore, this requirement has long been deprecated. Make sure to **enable** this quirk or the system **won't boot**. You're only warned once.
+
 
 ### Note for Zen 4 CPUs
 
@@ -42,7 +45,7 @@ Depending on the specific property list you use for your target OS X installatio
 | _cpuid_set_info | cpuid_cores_per_package set to const | (user-specified) |
 | _cpuid_set_info | GenuineIntel to AuthenticAMD | None |
 | _commpage_populate | Remove rdmsr | None |
-| _cpuid_set_cache_info | CPUID proper instead of 4 | None |
+| _cpuid_set_cache_info | CPUID 0x8000001d instead of 4 | None |
 | _cpuid_set_generic_info | Remove wrmsr(0x8B) | None |
 | _cpuid_set_generic_info | Replace rdmsr(0x8B) with constant 186 | None |
 | _cpuid_set_generic_info | Set flag=1 | None |
@@ -59,7 +62,7 @@ The Core Count per Package patch needs to be modified to boot your system. The f
 | OS X Version | Default Value | Example Value |
 | --- | --- | --- |
 | 10.12 | BA 00 00 00 00 00 | BA 04 00 00 00 00 |
-| 10.11 | TBD | TBD |
+| 10.11 | BA 00 00 00 00 89 | BA 04 00 00 00 89 |
 | 10.10 | TBD | TBD |
 | 10.9 | TBD | TBD |
 | 10.8 | TBD | TBD |
@@ -98,9 +101,14 @@ From the table above, replace `<BX XX>` with the hexadecimal value matching your
 
 ## Gallery
 
-<h3 align="center">macOS Sierra 10.12.0</h3>
+<h3 align="center">macOS Sierra 10.12.0 (16A323)</h3>
 <p align="center">
   <img src="./assets/gallery/Sierra.png">
+</p>
+
+<h3 align="center">Mac OS X El Capitan 10.11.6 (15G31)</h3>
+<p align="center">
+  <img src="./assets/gallery/ElCapitan.png">
 </p>
 
 ## AMD Kernel Patches Credits
