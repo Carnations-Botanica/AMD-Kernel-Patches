@@ -1,7 +1,7 @@
 # General macOS files
 
 .DS_store
-patches_backported.txt
+patches.txt
 commit.sh
 
 # Carnations Internal

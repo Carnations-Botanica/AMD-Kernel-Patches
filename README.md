@@ -15,13 +15,13 @@ Support Chart
 | --- | --- | --- |
 | Sierra | <span style="color: #7afc4e;">Complete</span> | Boots in a VM, untested on baremetal. |
 | El Capitan | <span style="color: #7afc4e;">Complete</span> | Boots in a VM, untested on baremetal. |
-| Yosemite | <span style="color: #ffe985;">Work-In-Progress</span> | Research Phase<br>Currently Kernel Panics. |
+| Yosemite | <span style="color: #ffe985;">Work-In-Progress</span> | Research Phase:<br>Does not reach Kernel-Space. |
 | Mavericks | <span style="color: #a80000;">Incomplete</span> | None |
 | Mountain Lion | <span style="color: #a80000;">Incomplete</span> | None |
 | Lion | <span style="color: #a80000;">Incomplete</span> | None |
-| Snow Leopard | <span style="color: #a80000;">Incomplete</span> | None |
-| Leopard | <span style="color: #ffe985;">Work-In-Progress</span> | Research Phase<br>Currently Kernel Panics. |
-| Tiger | <span style="color: #ffe985;">Work-In-Progress</span> | Research Phase<br>Currently Kernel Panics. |
+| Snow Leopard | <span style="color: #ffe985;">Work-In-Progress</span> | Research Phase:<br>Does not reach Kernel-Space. |
+| Leopard | <span style="color: #ffe985;">Work-In-Progress</span> | Research Phase:<br>Currently Kernel Panics. |
+| Tiger | <span style="color: #ffe985;">Work-In-Progress</span> | Research Phase:<br>Currently Kernel Panics. |
 
 # Preliminary Information
 
