@@ -30,7 +30,7 @@
 				<key>MinKernel</key>
 				<string>10.0.0</string>
 				<key>Replace</key>
-				<data>uAQAAACJBQ==</data>
+				<data>uAAAAACJBQ==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -102,25 +102,25 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey, RoyalGraphx | _cpuid_set_cpufamily | Force CPUFAMILY_INTEL_PENRYN | 10.6+</string>
+				<string>algrey, RoyalGraphx, Shaneee | _cpuid_set_cpufamily | Force CPUFAMILY_INTEL_PENRYN | 10.6+</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>gD32GGkABg+F8AAAAA==</data>
+				<data>gD0AGGkABg+F8AAAAA==</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>//8A/////////////w==</data>
 				<key>MaxKernel</key>
 				<string>10.99.99</string>
 				<key>MinKernel</key>
 				<string>10.0.0</string>
 				<key>Replace</key>
-				<data>uLxP6niQkA+F8AAAAA==</data>
+				<data>uLxP6nhmkA+F8AAAAA==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>

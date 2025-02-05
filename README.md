@@ -31,7 +31,6 @@ Ensure ``FixupAppleEfiImages`` quirk is enabled to ensure W^R errors on older OS
 
 Ensure the Kernel Quirk `ProvideCurrentCpuInfo` is enabled. OpenCore 0.7.1 or newer is required. You should NOT be using an outdated copy of OpenCore, this requirement has long been deprecated. Make sure to **enable** this quirk or the system **won't boot**. You're only warned once.
 
-
 ### Note for Zen 4 CPUs
 
 We do not have any people on Zen 4 available for testing at this moment, no official support is provided at this time. Zen 3 FTW (not really, give us time).
@@ -67,7 +66,7 @@ The Core Count per Package patch needs to be modified to boot your system. The f
 | 10.9 | TBD | TBD |
 | 10.8 | TBD | TBD |
 | 10.7 | TBD | TBD |
-| 10.6 | TBD | TBD |
+| 10.6 | B8 00 00 00 00 89 | B8 04 00 00 00 89 |
 | 10.5 | TBD | TBD |
 | 10.4 | B8 00 00 00 | B8 04 00 00 |
 
@@ -92,6 +91,8 @@ From the table above, replace `<BX XX>` with the hexadecimal value matching your
 - No 32-bit support (OPEMU)
 
 ## Supported AMD CPUs
+
+As of right now, these are all theoretically supported AMD CPUs. Bare metal testing is greatly appreciated, and opening an Issue on the repo with DEBUG logs is equally appreciated.
 
 | Family | Codename | Product Name |
 | --- | --- | --- |
@@ -121,7 +122,7 @@ If any credits are missing, they are to be added in future commits.
 
 - [Dhinak G](https://github.com/dhinakg), helping reverse-engineer functions for new Find/Replace values in Tiger, for CPUID 4 and Cores Per Package patches
 
-- []()
+- [Shaneee](https://github.com/shaneee), helping tackle Snow Leopard Kernel Patches, and assisting in building XNU releases for binary diffing, updating Force PENRYN patches with Masks for wider support
 
 - []()
 
