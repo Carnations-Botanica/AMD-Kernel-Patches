@@ -192,13 +192,14 @@
 				<key>Base</key>
 				<string>_tsc_init</string>
 				<key>Comment</key>
-				<string>algrey, RoyalGraphx | _tsc_init | Skip msr_flex_ratio test and go grab FSBFrequency from EFI | 10.6+</string>
+				<string>algrey, Shaneee, RoyalGraphx | _tsc_init | _tscGranularity MSR Intel to AMD and skip MSR check | 10.6.7
+</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>98MAAAEAdA==</data>
+				<data>uZQBAAAPMkiJ00jB4yCJwEgJw2a5zgAPMkjB4iCJwEgJwkiJ0EjB6Cgl/wAAAIkF8xZXAA+21okV7hZXAInRSIkVxRZXAPfDAAABAHQW</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
@@ -210,37 +211,7 @@
 				<key>MinKernel</key>
 				<string>10.0.0</string>
 				<key>Replace</key>
-				<data>Zg8fRAAA6w==</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>Base</key>
-				<string></string>
-				<key>Comment</key>
-				<string>algrey, Shaneee, RoyalGraphX | _tsc_init | _tscGranularity Intel to AMD MSR Logic | 10.6.7</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>uZQBAAAPMkiJ00jB4yCJwEgJw2a5zgAPMkjB4iCJwEgJwkiJ0EjB6Cgl/wAAAIkF8xZXAA+21okV7hZXAInRSIkVxRZXAA==</data>
-				<key>Identifier</key>
-				<string>kernel</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>MaxKernel</key>
-				<string>10.99.99</string>
-				<key>MinKernel</key>
-				<string>10.0.0</string>
-				<key>Replace</key>
-				<data>uWQAAcAPMg+2yInGwe4Ig+Y/RTH/MdJIichI9/ZIAcBmkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkA==</data>
+				<data>uZQBAAAPMonDuc4AAAAPMg+2zokNDhdXAA+2xIkFCRdXAEiJBeIWVwCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkOsW</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
