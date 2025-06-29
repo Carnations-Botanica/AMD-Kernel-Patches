@@ -12,43 +12,13 @@
 				<key>Base</key>
 				<string>_cpuid_set_info</string>
 				<key>Comment</key>
-				<string>algrey, RoyalGraphX | Force cpuid_cores_per_package to constant (user-specified) | 10.12+</string>
+				<string>Force cpuid_cores_per_package | user defined CPU cores</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>wegaAAAA</data>
-				<key>Identifier</key>
-				<string>kernel</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>//3/AAAA</data>
-				<key>MaxKernel</key>
-				<string>16.99.99</string>
-				<key>MinKernel</key>
-				<string>16.0.0</string>
-				<key>Replace</key>
-				<data>ugAAAAAA</data>
-				<key>ReplaceMask</key>
-				<data>//////8A</data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>Base</key>
-				<string></string>
-				<key>Comment</key>
-				<string>algrey, RoyalGraphX | _cpuid_set_cache_info | Set CPUID 0x8000001d instead of 4 | 10.12+</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>uAQAAABEiflEifI=</data>
+				<data>weoa/8KJ</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
@@ -60,7 +30,7 @@
 				<key>MinKernel</key>
 				<string>16.0.0</string>
 				<key>Replace</key>
-				<data>uB0AAIBEiflEifI=</data>
+				<data>ugAAAACJ</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -72,7 +42,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey, Zormeister | _commpage_populate | Remove rdmsr | 10.12+</string>
+				<string>_commpage_populate | Remove rdmsr</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -102,7 +72,37 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey, Zormeister | _cpuid_set_generic_info | Remove wrmsr(0x8B) | 10.12+</string>
+				<string>_cpuid_set_cache_info | Update Intel Leaf to AMD Leaf</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>uAQAAABEiflEiQ==</data>
+				<key>Identifier</key>
+				<string>kernel</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>MaxKernel</key>
+				<string>16.99.99</string>
+				<key>MinKernel</key>
+				<string>16.0.0</string>
+				<key>Replace</key>
+				<data>uB0AAIBEiflEiQ==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
+				<string></string>
+				<key>Comment</key>
+				<string>_cpuid_set_generic_info | Remove wrmsr(0x8B)</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -132,7 +132,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey, Zormeister | _cpuid_set_generic_info | Replace rdmsr(0x8B) with constant 186 | 10.12+</string>
+				<string>_cpuid_set_generic_info | Replace rdmsr(0x8B)</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -162,7 +162,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey, Zormeister | _cpuid_set_generic_info | Set flag=1 | 10.12+</string>
+				<string>_cpuid_set_generic_info | Set flag=1</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -192,13 +192,13 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey, Zormeister, RoyalGraphX | _cpuid_set_generic_info | Disable check to allow leaf7 | 10.12+</string>
+				<string>_cpuid_set_generic_info | Disable Check for Leaf 7</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>g/g6D4I=</data>
+				<data>D7YFUqNwAIP4Og+CsQAAAA==</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
@@ -210,7 +210,7 @@
 				<key>MinKernel</key>
 				<string>16.0.0</string>
 				<key>Replace</key>
-				<data>g/gAD4I=</data>
+				<data>D7YFUqNwAIP4AA+CsQAAAA==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -222,7 +222,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey | _cpuid_set_info | GenuineIntel to AuthenticAMD | 10.12+</string>
+				<string>Strings Replace | GenuineIntel/AuthenticAMD Vendor</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -252,25 +252,25 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey, RoyalGraphX | _cpuid_set_cpufamily | Force CPUFAMILY_INTEL_PENRYN | 10.12+</string>
+				<string>_cpuid_set_cpufamily | Force CPUFAMILY_INTEL_PENRYN</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>D7cFAAAAADHbD7bI</data>
+				<data>MdsPtsiD+QZ1Wg==</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>////AAAAAP//////</data>
+				<data></data>
 				<key>MaxKernel</key>
 				<string>16.99.99</string>
 				<key>MinKernel</key>
 				<string>16.0.0</string>
 				<key>Replace</key>
-				<data>uAYAAACQkJCQkJCQ</data>
+				<data>u7xP6njpWgAAAA==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -282,7 +282,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey, Zormeister | _i386_init | Remove 3 rdmsr calls | 10.12+</string>
+				<string>_i386_init | Remove rdmsr calls</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -312,7 +312,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey, XLNC, Zormeister | Remove version check and panic | 10.12+</string>
+				<string>_lapic_init | Remove version check</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -342,25 +342,55 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey, RoyalGraphX | _mtrr_update_action | PAT Patch | 10.12+</string>
+				<string>_mtrr_update_action | Set PAT MSR to 00070106h</string>
 				<key>Count</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>icCB4v//8P9IgcoAAAAAuQAAAA==</data>
+				<data>icCB4v//8P9IgcoAAAEAuXcCAAA=</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>//////////////8AAAAA/wAAAA==</data>
+				<data></data>
 				<key>MaxKernel</key>
 				<string>16.99.99</string>
 				<key>MinKernel</key>
 				<string>16.0.0</string>
 				<key>Replace</key>
-				<data>uXcCAAC4BgEHALoGAQcADzCQkA==</data>
+				<data>uAYBBwC6BgEHAGYPH4QAAAAAAJA=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
+				<string></string>
+				<key>Comment</key>
+				<string>_version | RELEASE to ROYALGX</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>RGFyd2luIEtlcm5lbCBWZXJzaW9uIDE3LjcuMDogVGh1IEp1biAyMSAyMjo1MzoxNCBQRFQgMjAxODsgcm9vdDp4bnUtNDU3MC43MS4yfjEvUkVMRUFTRV9YODZfNjQA</data>
+				<key>Identifier</key>
+				<string>kernel</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>MaxKernel</key>
+				<string>16.99.99</string>
+				<key>MinKernel</key>
+				<string>16.0.0</string>
+				<key>Replace</key>
+				<data>RGFyd2luIEtlcm5lbCBWZXJzaW9uIDE3LjcuMDogVGh1IEp1biAyMSAyMjo1MzoxNCBQRFQgMjAxODsgcm9vdDp4bnUtNDU3MC43MS4yfjEvQ0FSTlROU19YODZfNjQ=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>

@@ -1,14 +1,17 @@
 # General macOS files
 
 .DS_store
-patches.txt
-commit.sh
 
 # Carnations Internal
 
-push.sh
-patch_converter.py
-carnations_patcher.py
+assets/binaries
+assets/logs
+
+extras/high_sierra_patches.json
+extras/sierra_patches.json
+extras/patches.txt
+
+tools/
 
 # XNU Source Trees
 
