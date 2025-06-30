@@ -15,8 +15,8 @@ Binary kernel patches to enable almost native AMD CPU support on OS X.
 | --- | --- | --- |
 | Sierra | <span style="color: #7afc4e;">Complete</span> | None |
 | El Capitan | <span style="color: #7afc4e;">Complete</span>  | None |
-| Yosemite | <span style="color: #ffe985;">Work-In-Progress</span> | None |
-| Mavericks | <span style="color: #a80000;">Incomplete</span> | None |
+| Yosemite | <span style="color: #7afc4e;">Complete</span> | None |
+| Mavericks | <span style="color: #ffe985;">Work-In-Progress</span> | None |
 | Mountain Lion | <span style="color: #a80000;">Incomplete</span> | None |
 | Lion | <span style="color: #a80000;">Incomplete</span> | None |
 | Snow Leopard | <span style="color: #a80000;">Incomplete</span> | None |
@@ -30,16 +30,26 @@ Binary kernel patches to enable almost native AMD CPU support on OS X.
   <img src="./assets/gallery/Sierra.png">
 </p>
 
-<h3 align="center">macOS El Capitan 10.11.6 (15G31)</h3>
+<h3 align="center">OS X El Capitan 10.11.6 (15G31)</h3>
 <p align="center">
   <img src="./assets/gallery/El-Capitan.png">
+</p>
+
+<h3 align="center">OS X Yosemite 10.10.5 (14F27)</h3>
+<p align="center">
+  <img src="./assets/gallery/Yosemite.png">
+</p>
+
+<h3 align="center">OS X Mavericks 10.9.5 (13F34)</h3>
+<p align="center">
+  <img src="./assets/gallery/Mavericks.png">
 </p>
 
 # Preliminary Information
 
 ### Custom OpenCore Requirement
 
-If you want to test these versions of OS X / macOS on your own machine, as of right now you'll be required to use a modified copy of [OpenCore](https://github.com/Carnations-Botanica/OpenCorePkg/actions/runs/15970452475) by Carnations Botanica that has changes to MIN/MAX of default patches that affect AMD CPUs and VMs. These caused the initial early kernel panics in earlier testings.
+If you want to test these versions of OS X / macOS on your own machine, as of right now you'll be required to use a modified copy of [OpenCore](https://github.com/Carnations-Botanica/OpenCorePkg/actions/runs/15984994642) by Carnations Botanica that has changes to MIN/MAX of default patches that affect AMD CPUs and VMs. These caused the initial early kernel panics in earlier testings.
 
 **You must be signed in to download Github Artifacts like the required <code>macOS XCODE5 Artifacts</code>!**
 
@@ -76,8 +86,8 @@ The Core Count per Package patch needs to be modified to boot your system. The f
 | --- | --- | --- |
 | 10.12 | BA 00 00 00 00 00 | BA 02 00 00 00 00 |
 | 10.11 | BA 00 00 00 00 00 | BA 04 00 00 00 00 |
-| 10.10 | TBD | B? 06 00 00 00 00 |
-| 10.9 | TBD | B? 08 00 00 00 00 |
+| 10.10 | 41 BE 00 00 00 00 | 41 BE 06 00 00 00 |
+| 10.9 | TBD | TBD |
 | 10.8 | TBD | TBD |
 | 10.7 | TBD | TBD |
 | 10.6 | TBD | TBD |
