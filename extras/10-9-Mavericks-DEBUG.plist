@@ -18,7 +18,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>uYsAAAAxwDHSDzA=</data>
+				<data>v4sAAABIvgAAAAAAAAAA6FYlAAA=</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
@@ -30,7 +30,7 @@
 				<key>MinKernel</key>
 				<string>13.0.0</string>
 				<key>Replace</key>
-				<data>ZpBmkGaQZpBmkJA=</data>
+				<data>Zg8fhAAAAAAAZg8fhAAAAAAAZpA=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -48,7 +48,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>uYsAAAAPMg==</data>
+				<data>v4sAAADoLhkAAA==</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
@@ -60,7 +60,7 @@
 				<key>MinKernel</key>
 				<string>13.0.0</string>
 				<key>Replace</key>
-				<data>uroAAABmkA==</data>
+				<data>SLgAAAAAugAAAA==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -78,7 +78,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>uRcAAAAPMsHqEoDiBw==</data>
+				<data>6GQYAABIwegySCUHAAAAiMI=</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
@@ -90,7 +90,7 @@
 				<key>MinKernel</key>
 				<string>13.0.0</string>
 				<key>Replace</key>
-				<data>sgFmDx+EAAAAAABmkA==</data>
+				<data>Dx+EAAAAAAAPH4AAAAAAsgE=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -108,7 +108,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>gD0GWF4AOg==</data>
+				<data>gfk6AAAA</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
@@ -120,7 +120,7 @@
 				<key>MinKernel</key>
 				<string>13.0.0</string>
 				<key>Replace</key>
-				<data>gD0GWF4AAA==</data>
+				<data>gfkAAAAA</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -138,7 +138,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>Mds8BnV4D7bEZoP4Fg==</data>
+				<data>D7ZHTIPoBolF8A+FMgEAAA==</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
@@ -150,7 +150,7 @@
 				<key>MinKernel</key>
 				<string>13.0.0</string>
 				<key>Replace</key>
-				<data>u7xP6njpMQAAAA8fAA==</data>
+				<data>x0X0vE/qeOk2AQAADx9AAA==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -168,7 +168,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>uAQAAABEieE=</data>
+				<data>x0XQBAAAAA==</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
@@ -180,7 +180,7 @@
 				<key>MinKernel</key>
 				<string>13.0.0</string>
 				<key>Replace</key>
-				<data>uB0AAIBEieE=</data>
+				<data>x0XQHQAAgA==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -198,7 +198,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>weoa/8I=</data>
+				<data>i0XQwega/8A=</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
@@ -210,7 +210,7 @@
 				<key>MinKernel</key>
 				<string>13.0.0</string>
 				<key>Replace</key>
-				<data>ugAAAAA=</data>
+				<data>uAAAAAAPHwA=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -222,13 +222,13 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>_commpage_populate | Remove rdmsr</string>
+				<string>_commpage_init_cpu_capabilities | Remove rdmsr</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>uaABAAAPMg==</data>
+				<data>v6ABAADoJg4AAA==</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
@@ -240,7 +240,7 @@
 				<key>MinKernel</key>
 				<string>13.0.0</string>
 				<key>Replace</key>
-				<data>ZpBmkGaQkA==</data>
+				<data>Zg8fhAAAAAAAkA==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -258,7 +258,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>JfwAAACD+BM=</data>
+				<data>Jf8AAAA9FAAAAA==</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
@@ -270,7 +270,7 @@
 				<key>MinKernel</key>
 				<string>13.0.0</string>
 				<key>Replace</key>
-				<data>JfwAAAAPHwA=</data>
+				<data>Jf8AAAAPH0QAAA==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -282,14 +282,13 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>mp.c | Increase TSC sync margin to prevent panic
-</string>
+				<string>mp.c | Increase TSC sync margin to prevent panic</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>iw1THFQA</data>
+				<data>iw3JoogA</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>

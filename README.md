@@ -16,7 +16,7 @@ Binary kernel patches to enable almost native AMD CPU support on OS X.
 | Sierra | <span style="color: #7afc4e;">Complete</span> | None |
 | El Capitan | <span style="color: #7afc4e;">Complete</span>  | None |
 | Yosemite | <span style="color: #7afc4e;">Complete</span> | None |
-| Mavericks | <span style="color: #ffe985;">Work-In-Progress</span> | None |
+| Mavericks | <span style="color: #ffe985;">Work-In-Progress</span> | TSC Syncing on AMD CPUs is broken, you WILL KP. |
 | Mountain Lion | <span style="color: #a80000;">Incomplete</span> | None |
 | Lion | <span style="color: #a80000;">Incomplete</span> | None |
 | Snow Leopard | <span style="color: #a80000;">Incomplete</span> | None |
@@ -87,7 +87,7 @@ The Core Count per Package patch needs to be modified to boot your system. The f
 | 10.12 | BA 00 00 00 00 00 | BA 02 00 00 00 00 |
 | 10.11 | BA 00 00 00 00 00 | BA 04 00 00 00 00 |
 | 10.10 | 41 BE 00 00 00 00 | 41 BE 06 00 00 00 |
-| 10.9 | TBD | TBD |
+| 10.9 | BA 00 00 00 00 | BA 08 00 00 00 |
 | 10.8 | TBD | TBD |
 | 10.7 | TBD | TBD |
 | 10.6 | TBD | TBD |
@@ -135,7 +135,7 @@ If any credits are missing, they are to be added in future commits as the projec
 
 - [Dhinak G](https://github.com/dhinakg), helping reverse-engineer functions for new Find/Replace values in Tiger, for CPUID 4 and Cores Per Package patches
 
-- [Shaneee](https://github.com/shaneee), helping tackle Snow Leopard Kernel Patches, and assisting in building XNU releases for binary diffing, updating Force PENRYN patches with Masks for wider support
+- [Shaneee](https://github.com/shaneee), helping tackle Snow Leopard Kernel Patches, and assisting in building XNU releases for binary diffing, updating Force PENRYN patches with Masks for wider support, compiling the Mavericks 10.9.5 ``mach_kernel`` as ``DEBUG`` variant for improved serial output logging.
 
 - []()
 
