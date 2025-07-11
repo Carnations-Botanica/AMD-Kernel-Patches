@@ -16,8 +16,8 @@ Binary kernel patches to enable almost native AMD CPU support on OS X.
 | Sierra | <span style="color: #7afc4e;">Complete</span> | None |
 | El Capitan | <span style="color: #7afc4e;">Complete</span>  | None |
 | Yosemite | <span style="color: #7afc4e;">Complete</span> | None |
-| Mavericks | <span style="color: #ffe985;">Work-In-Progress</span> | TSC Syncing on AMD CPUs is broken, you WILL KP. |
-| Mountain Lion | <span style="color: #a80000;">Incomplete</span> | None |
+| Mavericks | <span style="color: #7afc4e;">Complete</span> | Requires a TSC Syncing Kext or you will kernel panic. |
+| Mountain Lion | <span style="color: #ffe985;">Work-In-Progress</span> | None |
 | Lion | <span style="color: #a80000;">Incomplete</span> | None |
 | Snow Leopard | <span style="color: #a80000;">Incomplete</span> | None |
 | Leopard | <span style="color: #a80000;">Incomplete</span> | None |
@@ -61,22 +61,24 @@ Ensure the Kernel Quirk `ProvideCurrentCpuInfo` is enabled. OpenCore 0.7.1 or ne
 
 ### Patch List
 
-Depending on the specific property list you use for your target OS X installation, you can get any of the following 12 patches that are backported from High Sierra:
+Depending on the specific property list you use for your target OS X installation, you can get any of the following patches that are backported from High Sierra, or new to the scene with Legacy OS X:
 
-| Base | Patch Name | Comment |
+| Function/Target | Patch Name | Comment |
 | --- | --- | --- |
-| Strings Replace | GenuineIntel to AuthenticAMD | None |
-| _cpuid_set_info | cpuid_cores_per_package set to const | (user-defined) |
-| _commpage_populate | Remove rdmsr | None |
-| _cpuid_set_cache_info | CPUID 0x8000001d instead of 4 | None |
 | _cpuid_set_generic_info | Remove wrmsr(0x8B) | None |
 | _cpuid_set_generic_info | Replace rdmsr(0x8B) with constant 186 | None |
 | _cpuid_set_generic_info | Set flag=1 | None |
-| _cpuid_set_generic_info | Disable check to allow Leaf 7 | None |
+| _cpuid_set_generic_info | Disable check for Leaf 7 | None |
 | _cpuid_set_cpufamily | Force CPUFAMILY_INTEL_PENRYN | None |
-| _mtrr_update_action | Set PAT MSR to 00070106h | None |
-| _i386_init/_pstate_trace | Remove rdmsr calls | None |
+| _cpuid_set_cache_info | CPUID 0x8000001d instead of 4 | AMD uses a different Leaf than Intel. |
+| _cpuid_set_info | cpuid_cores_per_package set to const | Manually set because detection fails on AMD |
+| _commpage_populate | Remove rdmsr | None |
+| _i386_init/_commpage_populate/_pstate_trace | Remove rdmsr calls | Various places. |
 | _lapic_init | Remove version check panic | None |
+| _mtrr_update_action | Set PAT MSR to 00070106h | This patch is only for 10.10+ |
+| _panic_epilogue | Prevent instant reboot on panic | Allows for the CPU halt to be avoided |
+| mp.c | Increase TSC sync delta margin to prevent panic call | On 10.9- TSC Sync issues are so dangerous that they can cause instant panic and reboots. |
+| String Replace | GenuineIntel to AuthenticAMD | None |
 
 ### Configuring cpuid_cores_per_package patch.
 
@@ -114,6 +116,8 @@ From the table above, replace `<BX XX>` with the hexadecimal value matching your
 ## Disadvantages
 
 - No 32-bit support (OPEMU)
+
+- Mavericks currently requires the DEBUG variant Kernel to boot. This will be fixed once we have a baremetal machine with Serial Output, so that we can capture the panic log and make the missing patches for the RELEASE Kernel. You can find the DEBUG variant of the OS X Mavericks 10.9.5 ``mach_kernel`` in ``extras/kernels/mavericks/`` 
 
 ## Supported AMD CPUs
 
