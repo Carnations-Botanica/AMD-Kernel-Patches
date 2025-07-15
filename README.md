@@ -17,9 +17,9 @@ Binary kernel patches to enable almost native AMD CPU support on OS X.
 | El Capitan | <span style="color: #7afc4e;">Complete</span>  | None |
 | Yosemite | <span style="color: #7afc4e;">Complete</span> | None |
 | Mavericks | <span style="color: #7afc4e;">Complete</span> | Requires a TSC Syncing Kext or you will kernel panic. |
-| Mountain Lion | <span style="color: #ffe985;">Work-In-Progress</span> | None |
-| Lion | <span style="color: #a80000;">Incomplete</span> | None |
-| Snow Leopard | <span style="color: #a80000;">Incomplete</span> | None |
+| Mountain Lion | <span style="color: #7afc4e;">Complete</span> | Requires rebuilding kernelcache for DEBUG variant builds. |
+| Lion | <span style="color: #ffe985;">Work-In-Progress</span> | None |
+| Snow Leopard | <span style="color: #ffe985;">Work-In-Progress</span> | None |
 | Leopard | <span style="color: #a80000;">Incomplete</span> | None |
 | Tiger | <span style="color: #a80000;">Incomplete</span> | None |
 
@@ -43,6 +43,11 @@ Binary kernel patches to enable almost native AMD CPU support on OS X.
 <h3 align="center">OS X Mavericks 10.9.5 (13F34)</h3>
 <p align="center">
   <img src="./assets/gallery/Mavericks.png">
+</p>
+
+<h3 align="center">OS X Mountain Lion 10.8.5 (12F45)</h3>
+<p align="center">
+  <img src="./assets/gallery/Mountain-Lion.png">
 </p>
 
 # Preliminary Information
@@ -90,7 +95,7 @@ The Core Count per Package patch needs to be modified to boot your system. The f
 | 10.11 | BA 00 00 00 00 00 | BA 04 00 00 00 00 |
 | 10.10 | 41 BE 00 00 00 00 | 41 BE 06 00 00 00 |
 | 10.9 | BA 00 00 00 00 | BA 08 00 00 00 |
-| 10.8 | TBD | TBD |
+| 10.8 | B8 00 00 00 00 | B8 0C 00 00 00 |
 | 10.7 | TBD | TBD |
 | 10.6 | TBD | TBD |
 | 10.5 | TBD | TBD |
@@ -119,6 +124,10 @@ From the table above, replace `<BX XX>` with the hexadecimal value matching your
 
 - Mavericks currently requires the DEBUG variant Kernel to boot. This will be fixed once we have a baremetal machine with Serial Output, so that we can capture the panic log and make the missing patches for the RELEASE Kernel. You can find the DEBUG variant of the OS X Mavericks 10.9.5 ``mach_kernel`` in ``extras/kernels/mavericks/`` 
 
+## Notes for Users
+
+- Currently, Mavericks and below require the usage of a stock but DEBUG variant Kernel. These can be found under ``extras/kernels/*``. To use these, simply apply them to your installation media and rebuild the kernelcache. You must/can/may end up needing to equally add the DEBUG Kernel as a post-install step, before you can boot into the final installation. This will be resolved once we can get more testers with real serial output to get us the kernel panics that we need, to create the missing RELEASE patches.
+
 ## Supported AMD CPUs
 
 As of right now, these are all theoretically supported AMD CPUs. Testing is greatly appreciated, and opening an Issue on the repo with DEBUG logs is equally appreciated.
@@ -140,6 +149,8 @@ If any credits are missing, they are to be added in future commits as the projec
 - [Dhinak G](https://github.com/dhinakg), helping reverse-engineer functions for new Find/Replace values in Tiger, for CPUID 4 and Cores Per Package patches
 
 - [Shaneee](https://github.com/shaneee), helping tackle Snow Leopard Kernel Patches, and assisting in building XNU releases for binary diffing, updating Force PENRYN patches with Masks for wider support, compiling the Mavericks 10.9.5 ``mach_kernel`` as ``DEBUG`` variant for improved serial output logging.
+
+- [Shantonu](https://shantonu.blogspot.com/) of ssen's blog, which was a huge help, and always has been when it comes to knowing exactly what is required to build the XNU kernel for each of XNU's major releases since Snow Leopard. This was major when building vanilla, but DEBUG/DEVELOPMENT Kernels to test and get better serial output from. 
 
 - []()
 
