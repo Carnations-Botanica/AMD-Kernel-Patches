@@ -18,8 +18,8 @@ Binary kernel patches to enable almost native AMD CPU support on OS X.
 | Yosemite | <span style="color: #7afc4e;">Complete</span> | None |
 | Mavericks | <span style="color: #7afc4e;">Complete</span> | Requires a TSC Syncing Kext or you will kernel panic. |
 | Mountain Lion | <span style="color: #7afc4e;">Complete</span> | Requires rebuilding kernelcache for DEBUG variant builds. |
-| Lion | <span style="color: #ffe985;">Work-In-Progress</span> | None |
-| Snow Leopard | <span style="color: #ffe985;">Work-In-Progress</span> | None |
+| Lion | <span style="color: #7afc4e;">Complete</span> | TSC Sync Issues, boots but unstable and is practically unusable. |
+| Snow Leopard | <span style="color: #ffe985;">Work-In-Progress</span> | KernelSpace is reached, but TSC issues do not allow further boot. |
 | Leopard | <span style="color: #a80000;">Incomplete</span> | None |
 | Tiger | <span style="color: #a80000;">Incomplete</span> | None |
 
@@ -48,6 +48,16 @@ Binary kernel patches to enable almost native AMD CPU support on OS X.
 <h3 align="center">OS X Mountain Lion 10.8.5 (12F45)</h3>
 <p align="center">
   <img src="./assets/gallery/Mountain-Lion.png">
+</p>
+
+<h3 align="center">OS X Lion 10.7.5 (11G63)</h3>
+<p align="center">
+  <img src="./assets/gallery/Lion.png">
+</p>
+
+<h3 align="center">OS X Snow Leopard 10.6.7 (10J3250)</h3>
+<p align="center">
+  <img src="./assets/gallery/Snow-Leopard.png">
 </p>
 
 # Preliminary Information
@@ -122,15 +132,13 @@ From the table above, replace `<BX XX>` with the hexadecimal value matching your
 
 - No 32-bit support (OPEMU)
 
-- Mavericks currently requires the DEBUG variant Kernel to boot. This will be fixed once we have a baremetal machine with Serial Output, so that we can capture the panic log and make the missing patches for the RELEASE Kernel. You can find the DEBUG variant of the OS X Mavericks 10.9.5 ``mach_kernel`` in ``extras/kernels/mavericks/`` 
-
 ## Notes for Users
 
 - Currently, Mavericks and below require the usage of a stock but DEBUG variant Kernel. These can be found under ``extras/kernels/*``. To use these, simply apply them to your installation media and rebuild the kernelcache. You must/can/may end up needing to equally add the DEBUG Kernel as a post-install step, before you can boot into the final installation. This will be resolved once we can get more testers with real serial output to get us the kernel panics that we need, to create the missing RELEASE patches.
 
 ## Supported AMD CPUs
 
-As of right now, these are all theoretically supported AMD CPUs. Testing is greatly appreciated, and opening an Issue on the repo with DEBUG logs is equally appreciated.
+As of right now, these are all theoretically supported AMD CPUs. Testing is greatly appreciated, and opening an Issue on the repo with DEBUG logs is equally appreciated. It seems that some generations of AMD CPUs have TSC issues bad enough to not allow the machine to boot. Please test extensively and send in reports!
 
 | Family | Codename | Product Name |
 | --- | --- | --- |

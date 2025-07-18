@@ -18,7 +18,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>v4sAAABIvgAAAAAAAAAA6A8mAAA=</data>
+				<data>uIsAAABIuQAAAAAAAAAA6HwMAAA=</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
@@ -26,11 +26,11 @@
 				<key>Mask</key>
 				<data></data>
 				<key>MaxKernel</key>
-				<string>12.99.99</string>
+				<string>11.99.99</string>
 				<key>MinKernel</key>
-				<string>12.0.0</string>
+				<string>11.0.0</string>
 				<key>Replace</key>
-				<data>Zg8fhAAAAAAAZg8fhAAAAAAAZpA=</data>
+				<data>Dx+EAAAAAAAPH4QAAAAAAA8fQAA=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -48,7 +48,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>v4sAAADodxYAAA==</data>
+				<data>i4X8/v//icfonAwAAA==</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
@@ -56,11 +56,11 @@
 				<key>Mask</key>
 				<data></data>
 				<key>MaxKernel</key>
-				<string>12.99.99</string>
+				<string>11.99.99</string>
 				<key>MinKernel</key>
-				<string>12.0.0</string>
+				<string>11.0.0</string>
 				<key>Replace</key>
-				<data>SLgAAAAAugAAAA==</data>
+				<data>SMfAugAAAJCQkJCQkA==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -78,7 +78,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>6K0VAABIwegySCUHAAAAiMI=</data>
+				<data>uBcAAACJx+jvCwAASMHoMiQDSItN+IhBbQ==</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
@@ -86,11 +86,11 @@
 				<key>Mask</key>
 				<data></data>
 				<key>MaxKernel</key>
-				<string>12.99.99</string>
+				<string>11.99.99</string>
 				<key>MinKernel</key>
-				<string>12.0.0</string>
+				<string>11.0.0</string>
 				<key>Replace</key>
-				<data>Dx+EAAAAAAAPH4AAAAAAsgE=</data>
+				<data>SItN+MZBbQGQkJCQkJCQkJCQkJCQkJCQkA==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -108,7 +108,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>gfk6AAAA</data>
+				<data>SItF+IpATTw6</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
@@ -116,11 +116,11 @@
 				<key>Mask</key>
 				<data></data>
 				<key>MaxKernel</key>
-				<string>12.99.99</string>
+				<string>11.99.99</string>
 				<key>MinKernel</key>
-				<string>12.0.0</string>
+				<string>11.0.0</string>
 				<key>Replace</key>
-				<data>gfkAAAAA</data>
+				<data>SItF+IpATTjA</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -138,7 +138,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>SItF8A+2SEyD+QYPhQ==</data>
+				<data>SItF+IpATA+2wIP4Bg==</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
@@ -146,11 +146,11 @@
 				<key>Mask</key>
 				<data></data>
 				<key>MaxKernel</key>
-				<string>12.99.99</string>
+				<string>11.99.99</string>
 				<key>MinKernel</key>
-				<string>12.0.0</string>
+				<string>11.0.0</string>
 				<key>Replace</key>
-				<data>x0XsvE/qeOkEAQAAkA==</data>
+				<data>x0XsvE/qeOmQAAAAkA==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -168,7 +168,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>x0XQBAAAAItFzIlF2Oh+FAAA</data>
+				<data>x0XIBAAAAItNxIlN0EiJx+ifBg==</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
@@ -176,11 +176,131 @@
 				<key>Mask</key>
 				<data></data>
 				<key>MaxKernel</key>
-				<string>12.99.99</string>
+				<string>11.99.99</string>
 				<key>MinKernel</key>
-				<string>12.0.0</string>
+				<string>11.0.0</string>
 				<key>Replace</key>
-				<data>x0XQHQAAgItFzIlF2Oh+FAAA</data>
+				<data>x0XIHQAAgItNxIlN0EiJx+ifBg==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
+				<string>_cpuid_set_info</string>
+				<key>Comment</key>
+				<string>_cpuid_set_info | Force cpuid_cores_per_package</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>i0XIJQAAAPw=</data>
+				<key>Identifier</key>
+				<string>kernel</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>MaxKernel</key>
+				<string>11.99.99</string>
+				<key>MinKernel</key>
+				<string>11.0.0</string>
+				<key>Replace</key>
+				<data>uAAAAACQkJA=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
+				<string></string>
+				<key>Comment</key>
+				<string>_commpage_init_cpu_capabilities | Remove rdmsr</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>uKABAACJx+hnAAAA</data>
+				<key>Identifier</key>
+				<string>kernel</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>MaxKernel</key>
+				<string>11.99.99</string>
+				<key>MinKernel</key>
+				<string>11.0.0</string>
+				<key>Replace</key>
+				<data>Dx+EAAAAAAAPH0AA</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
+				<string></string>
+				<key>Comment</key>
+				<string>_lapic_init | Remove version check</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>geH/AAAAg/kT</data>
+				<key>Identifier</key>
+				<string>kernel</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>MaxKernel</key>
+				<string>11.99.99</string>
+				<key>MinKernel</key>
+				<string>11.0.0</string>
+				<key>Replace</key>
+				<data>geH/AAAAkJCQ</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
+				<string></string>
+				<key>Comment</key>
+				<string>mp.c | Increase TSC sync margin to prevent panic</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>iw1veooA</data>
+				<key>Identifier</key>
+				<string>kernel</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>MaxKernel</key>
+				<string>11.99.99</string>
+				<key>MinKernel</key>
+				<string>11.0.0</string>
+				<key>Replace</key>
+				<data>uf////+Q</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -206,9 +326,9 @@
 				<key>Mask</key>
 				<data></data>
 				<key>MaxKernel</key>
-				<string>12.99.99</string>
+				<string>11.99.99</string>
 				<key>MinKernel</key>
-				<string>12.0.0</string>
+				<string>11.0.0</string>
 				<key>Replace</key>
 				<data>QXV0aGVudGljQU1EAA==</data>
 				<key>ReplaceMask</key>
